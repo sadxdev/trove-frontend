@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 export default function ProfilePage() {
   const user = {
-    name: 'Sadik Basha',
-    email: 'sadik@example.com',
-    phone: '+91 98765 43210',
+    name: "Sadik Basha",
+    email: "sadik@example.com",
+    phone: "+91 98765 43210",
   };
 
   return (

@@ -1,26 +1,29 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 const cartItems = [
   {
     id: 1,
-    name: 'Organic Tomato',
+    name: "Organic Tomato",
     price: 79,
     quantity: 2,
-    image: '/assets/images/tomato.jpg',
+    image: "/assets/images/tomato.jpg",
   },
   {
     id: 2,
-    name: 'Fresh Salmon',
+    name: "Fresh Salmon",
     price: 399,
     quantity: 1,
-    image: '/assets/images/salmon.jpg',
+    image: "/assets/images/salmon.jpg",
   },
 ];
 
 export default function CartPage() {
-  const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const total = cartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0,
+  );
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-10">
@@ -46,10 +49,14 @@ export default function CartPage() {
                 <p className="text-gray-500">Quantity: {item.quantity}</p>
                 <p className="text-gray-700">Price: ₹{item.price}</p>
               </div>
-              <div className="text-lg font-bold text-primary">₹{item.price * item.quantity}</div>
+              <div className="text-lg font-bold text-primary">
+                ₹{item.price * item.quantity}
+              </div>
             </div>
           ))}
-          <div className="text-right text-xl font-bold mt-4">Total: ₹{total}</div>
+          <div className="text-right text-xl font-bold mt-4">
+            Total: ₹{total}
+          </div>
           <button className="bg-primary text-white px-6 py-3 rounded-lg self-end hover:bg-blue-700 transition">
             Proceed to Checkout
           </button>

@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['your-image-source.com'], // update if using external image URLs
+    domains: ["your-image-source.com"], // update if using external image URLs
   },
 };
 

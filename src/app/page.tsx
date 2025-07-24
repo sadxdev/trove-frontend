@@ -6,8 +6,8 @@ export default function HomePage() {
           Welcome to Trove Market
         </h1>
         <p className="text-base sm:text-lg text-gray-600">
-          Your trusted online store for fresh vegetables, premium meat, and seafood — delivered to
-          your doorstep.
+          Your trusted online store for fresh vegetables, premium meat, and
+          seafood — delivered to your doorstep.
         </p>
       </div>
     </main>

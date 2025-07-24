@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const menuItems = [
-  { name: 'Essentials' },
-  { name: 'Meat & Seafood' },
-  { name: 'Breads & Bakery' },
-  { name: 'Pages' },
-  { name: 'On Sale', highlight: true },
+  { name: "Essentials" },
+  { name: "Meat & Seafood" },
+  { name: "Breads & Bakery" },
+  { name: "Pages" },
+  { name: "On Sale", highlight: true },
 ];
 
 export default function Navbar() {
@@ -21,10 +21,17 @@ export default function Navbar() {
         {/* Left section */}
         <div className="flex items-center gap-4">
           <Link href="/">
-            <Image src="/assets/images/logo.avif" alt="Logo" width={120} height={40} />
+            <Image
+              src="/assets/images/logo.avif"
+              alt="Logo"
+              width={120}
+              height={40}
+            />
           </Link>
           <div className="relative group">
-            <button className="text-sm font-medium hover:text-gray-900">All Categories</button>
+            <button className="text-sm font-medium hover:text-gray-900">
+              All Categories
+            </button>
           </div>
           <input
             type="text"
@@ -41,7 +48,9 @@ export default function Navbar() {
               onMouseEnter={() => setHoveredItem(item.name)}
               onMouseLeave={() => setHoveredItem(null)}
               className={`relative text-sm font-medium cursor-pointer ${
-                item.highlight ? 'text-red-500' : 'text-gray-800 hover:text-black'
+                item.highlight
+                  ? "text-red-500"
+                  : "text-gray-800 hover:text-black"
               }`}
             >
               {item.name}

@@ -1,5 +1,5 @@
-import { notFound } from 'next/navigation';
-import Image from 'next/image';
+import { notFound } from "next/navigation";
+import Image from "next/image";
 
 interface ProductPageProps {
   params: {
@@ -10,18 +10,18 @@ interface ProductPageProps {
 // Simulated product data (replace with real data fetching later)
 const products = [
   {
-    slug: 'organic-tomato',
-    name: 'Organic Tomato',
-    description: 'Freshly picked organic tomatoes straight from the farm.',
+    slug: "organic-tomato",
+    name: "Organic Tomato",
+    description: "Freshly picked organic tomatoes straight from the farm.",
     price: 79,
-    image: '/assets/images/tomato.jpg',
+    image: "/assets/images/tomato.jpg",
   },
   {
-    slug: 'fresh-salmon',
-    name: 'Fresh Salmon',
-    description: 'Premium quality salmon, sustainably sourced.',
+    slug: "fresh-salmon",
+    name: "Fresh Salmon",
+    description: "Premium quality salmon, sustainably sourced.",
     price: 399,
-    image: '/assets/images/salmon.jpg',
+    image: "/assets/images/salmon.jpg",
   },
 ];
 
